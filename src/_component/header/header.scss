@@ -1,0 +1,19 @@
+.header {
+  background-color: $color-dodger-blue;
+  color: $color-white;
+  height: 52px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__name {
+  font-size: 2rem;
+  padding: 1.5rem;
+  display: inline-block;
+}
+
+.mr-menu {
+  font-size: 2.5rem;
+  padding: 1.5rem;
+}
