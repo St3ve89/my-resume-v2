@@ -1,12 +1,17 @@
 .header {
   background-color: $color-dodger-blue;
   color: $color-white;
+}
+
+.header__top {
   height: 52px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  // border: 0.1rem solid $color-mercury;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 
+              0 2px 10px 0 rgba(0,0,0,0.12);
 }
-
 .header__name {
   font-size: 2rem;
   padding: 1.5rem;
