@@ -31,3 +31,27 @@
   display: block;
 }
 
+.header__menu-list {
+  display: none;
+}
+
+#toogle-top-menu {
+  display: none;
+}
+
+#toogle-top-menu:checked + .header__menu-list {
+  display: inherit;
+}
+
+.menu__link {
+  display: flex;
+  padding: 0.7rem 1rem;
+  color: $color-white;
+  font-size: 1.5rem;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+.menu__label {
+  padding: 0 1rem;
+}
