@@ -1,39 +1,39 @@
 nav.header
-  .header__top
-    span.header__name Istvan Acs
-    label.mr-menu(for="toogle-top-menu")
+  -
+    var menuList = [
+      {
+      label: 'home',
+      icon: 'home3',
+      link: '#landing-page'
+      },
+      {
+      label: 'about me',
+      icon: 'smile',
+      link: '#about-me'
+      },
+      {
+      label: 'awards',
+      icon: 'trophy',
+      link: '#award'
+      },
+      {
+      label: 'experience',
+      icon: 'airplane',
+      link: '#experience'
+      },
+      {
+      label: 'what I can do',
+      icon: 'hammer',
+      link: '#what-can-i-do',
+      }
+    ]
   input(type="checkbox", id="toogle-top-menu")
-  .header__menu-list
-    -
-      var menuList = [
-        {
-        label: 'home',
-        icon: 'home3',
-        link: '#landing-page'
-        },
-        {
-        label: 'about me',
-        icon: 'smile',
-        link: '#about-me'
-        },
-        {
-        label: 'awards',
-        icon: 'trophy',
-        link: '#award'
-        },
-        {
-        label: 'experience',
-        icon: 'airplane',
-        link: '#experience'
-        },
-        {
-        label: 'what I can do',
-        icon: 'hammer',
-        link: '#what-can-i-do',
-        }
-      ]
-    .menu-list
-      each menu in menuList
+  ul.header__menu-list
+    each menu in menuList
+      li.menu-list
         a.menu__link(href=menu.link)
           span(class=`mr-${menu.icon}`)
           span.menu__label=menu.label
+  .header__top
+    span.header__name Istvan Acs
+    label.mr-menu(for="toogle-top-menu")
